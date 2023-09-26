@@ -56,3 +56,18 @@ app.post("/", function (req, res) {
 app.listen(3000, function () {
     console.log("Server started on port 3000");
 });
+
+// shorter approah
+// app.post("/bmi", function (req, res) {
+//     let weight = parseFloat(req.body.weight);
+//     let height = parseFloat(req.body.height);
+
+//     let bmi = weight / (height * height);
+//     res.send("Your BMI is " + bmi.toFixed(2));
+// });
+
+// // Adding port
+// const port = process.env.PORT || 5000; // Use the provided PORT or default to 5000
+// app.listen(port, function () {
+//     console.log("Server is running on port " + port);
+// })
